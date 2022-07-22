@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Crypto list</title>
+</head>
+<body>
+<table border="1">
+
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    {% for crypto in cryptos %}
+    <tr>
+        <td>{{ crypto.id }} </td>
+        <td>{{ crypto.name }} </td>
+        <td>{{ crypto.price }} </td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
